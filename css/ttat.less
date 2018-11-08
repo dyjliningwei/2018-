@@ -1,0 +1,152 @@
+@import "rem-public";
+/*component*/
+@import "./component-style/title";
+
+.product-introduction {
+  width: 100%;
+  .product-img {
+    width: 100%;
+    height: auto;
+  }
+  .target {
+    width: 300px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    top: -26/37.5rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.goods-fun {
+  padding: 10/37.5rem;
+  .goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    .list-item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 5/37.5rem 0;
+      .item-icon {
+        width: 26/37.5rem;
+        height: 26/37.5rem;
+        margin-right: 5/37.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .item-content {
+        font-weight: 500;
+        font-size: 12/37.5rem;
+      }
+    }
+  }
+}
+
+.identification {
+  padding: 10/37.5rem 0;
+  .identification-statistical {
+    text-align: center;
+  }
+  .identification-list {
+    border-radius: 5/37.5rem;
+    background-color: #fffffb;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.activity {
+  .activity-date {
+    color: #fff;
+    font-weight: 700;
+  }
+  .activity-number {
+    background-color: #ffcc00;
+    padding: 10/37.5rem 0;
+    font-size: 28/37.5rem;
+    text-align: center;
+    border-radius: 50/37.5rem;
+    color: #fe0100;
+  }
+  .preferential {
+    padding: 10/37.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    .preferential-icon {
+      width: 20/37.5rem;
+      height: 20/37.5rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .link {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 12/37.5rem;
+    padding: 0 20/37.5rem 10/37.5rem;
+  }
+}
+.contact1,.contact2 {
+  width: 100%;
+  background-color: #330065;
+  min-height: 60/37.5rem;
+  &.active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .contact-info {
+    position: relative;
+    padding: 16/37.5rem 5/37.5rem 5/37.5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10/37.5rem;
+      left: 20/37.5rem;
+      width: 50/37.5rem;
+      height: 50/37.5rem;
+      background: url("../img/u58.png") no-repeat;
+      background-size: cover;
+    }
+    .contact-tel {
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16/37.5rem;
+      text-align: center;
+    }
+    .prompt {
+      color: #e69254;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12/37.5rem;
+      span {
+        display: block;
+        transform: scale(.7);
+        margin-right: -10/37.5rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 10/37.5rem;
+  color: #fff;
+  transform: scale(.7);
+  text-align: center;
+}
